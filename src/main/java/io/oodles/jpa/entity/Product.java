@@ -1,7 +1,6 @@
 package io.oodles.jpa.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,8 +15,10 @@ import lombok.ToString;
 public class Product {
 
 	@Id
+	@GeneratedValue
 	private int pid;
 	private String productName;
 	private int qty;
 	private int price;
+
 }
